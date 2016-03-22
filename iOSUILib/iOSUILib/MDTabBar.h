@@ -42,6 +42,7 @@ IB_DESIGNABLE
 @property(null_unspecified, nonatomic) IBInspectable UIColor *normalTextColor;
 @property(null_unspecified, nonatomic) IBInspectable UIColor *backgroundColor;
 @property(null_unspecified, nonatomic) IBInspectable UIColor *indicatorColor;
+@property(null_unspecified, nonatomic) IBInspectable UIColor *selectedBackgroundColor;
 @property(null_unspecified, nonatomic) IBInspectable UIColor *rippleColor;
 
 /// selected font

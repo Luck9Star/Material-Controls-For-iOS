@@ -43,6 +43,7 @@
 
 @property(nonatomic) UIColor *rippleColor;
 @property(nonatomic) UIColor *indicatorColor;
+@property(nonatomic) UIColor *selectedBackgroundColor;
 @property(nonatomic) NSMutableArray<UIView *> *tabs;
 - (CGRect)getSelectedSegmentFrame;
 - (void)setTextFont:(UIFont *)textFont withColor:(UIColor *)textColor;
@@ -157,6 +158,10 @@
 - (void)setIndicatorColor:(UIColor *)color {
   _indicatorColor = color;
   indicatorView.backgroundColor = color;
+}
+- (void)setSelectedBackgroundColor:(UIColor *)color {
+    _selectedBackgroundColor = color;
+    self.tintColor = color;
 }
 
 - (void)setRippleColor:(UIColor *)rippleColor {
@@ -586,6 +591,10 @@
 - (void)setIndicatorColor:(UIColor *)indicatorColor {
   _indicatorColor = indicatorColor;
   [segmentedControl setIndicatorColor:_indicatorColor];
+}
+- (void)setSelectedBackgroundColor:(UIColor *)selectedBackgroundColor {
+    _selectedBackgroundColor = selectedBackgroundColor;
+    [segmentedControl setSelectedBackgroundColor:_selectedBackgroundColor];
 }
 
 - (void)setRippleColor:(UIColor *)rippleColor {
